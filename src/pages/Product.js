@@ -12,14 +12,15 @@ import pic_5 from '../assets/images/pic-5.jpg';
 
 
 function  Product() {
+  
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 100,
     cssEase: "linear",
   };
 
@@ -43,6 +44,12 @@ function  Product() {
           </div>
           <div  className="product_slider">
           <img src={pic_5} alt="" />
+          </div>
+          <div  className="product_slider">
+          <img src={pic_2} alt="" />
+          </div>
+          <div  className="product_slider">
+          <img src={pic_3} alt="" />
           </div>
         </Slider>
       </Container>
