@@ -9,6 +9,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import "../assets/css/Style.css";
+import "../assets/css/Responsive.css";
 
 function Top_header() {
   return (
@@ -16,29 +17,26 @@ function Top_header() {
       <section className=" top-header-container">
         <Container>
           <Row>
-            <Col xs={12} md={9}>
+            <Col md={9}>
               <div className="top-header-left">
-                <Nav className="nav_link">
                   <Nav.Link className="vrtcl_line" href="#home">
                     <span>
                       <FaPhoneVolume />
                     </span>
-                    +88 (0) 101 0000 000
+                    +88(0)1010000000
                   </Nav.Link>
-
                   <Nav.Link href="#link">
                     <span>
                       <TfiEmail/>
                     </span>
                     suprema@qodeinteractive.com
                   </Nav.Link>
-                </Nav>
               </div>
             </Col>
 
-            <Col xs={12} md={3}>
+            <Col md={3}>
               <div className="top-header-right-social-icons">
-                <Nav className="nav_link justify-content-end">
+                {/* <Nav className="justify-content-center"> */}
                   <Nav.Link href="#home">
                     <FaFacebookF />
                   </Nav.Link>
@@ -51,7 +49,7 @@ function Top_header() {
                   <Nav.Link href="#home">
                     <FaLinkedinIn />
                   </Nav.Link>
-                </Nav>
+                {/* </Nav> */}
               </div>
             </Col>
           </Row>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col,Container,Button } from "react-bootstrap";
 import "../assets/css/Style.css";
+import "../assets/css/Responsive.css";
 
 function Banner() {
   return (

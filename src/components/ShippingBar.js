@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import "../assets/css/Style.css";
+import "../assets/css/Responsive.css";
 
 function ShippingBar() {
   return (
@@ -8,17 +9,17 @@ function ShippingBar() {
       {/* ***********Shipping BannerStart************ */}
       <section className="shipping_top_div">
         <div className="shipping_banner_img">
-          <Container>
-            <div className="shipping_banner_content">
+          <div className="shipping_banner_content">
+            <Container>
               <Row>
-                <Col sm={8}>
+                <Col md={8}>
                   <div className="">
                     <h2 className="shipping_banner_heading">
                       Free Shipping Wordwide.
                     </h2>
                   </div>
                 </Col>
-                <Col sm={4}>
+                <Col md={4}>
                   <div className="shipping_banner_link_div">
                     <Nav.Link className="shipping_banner_link" href="#action1">
                       Shop Now!
@@ -26,8 +27,8 @@ function ShippingBar() {
                   </div>
                 </Col>
               </Row>
-            </div>
-          </Container>
+            </Container>
+          </div>
         </div>
       </section>
       {/* ***********Shipping Banner End************ */}

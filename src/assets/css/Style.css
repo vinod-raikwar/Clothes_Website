@@ -50,7 +50,7 @@ h1 {
   text-align: center;
 }
 
-h2{
+.nav_brand{
 margin: 0;
 }
 
@@ -74,14 +74,24 @@ p {
   background-color: #000000;
 }
 
-.nav_link a {
+.top-header-left{
+  display: flex;
+}
+
+.top-header-left a span {
+  font-size: 14px;
+  margin: 12px 8px 12px 4px;
+}
+
+.top-header-left a {
   font-size: 12px;
   color: #c0c0c0;
   padding: 12px 22px;
   font-weight: 900;
   letter-spacing: 0.5px;
 }
-.nav_link a:hover {
+
+.top-header-left a:hover {
   color: #0cc3ce;;
 }
 
@@ -93,18 +103,19 @@ p {
   content: "";
   width: 1px;
   height: 15px;
-  background-color: white;
+  background-color: #ffffff;
   position: absolute;
   margin-left: 20px;
   margin-top: 3px;
 }
 
-.top-header-left a span {
-  font-size: 14px;
-  margin: 12px 8px 12px 4px;
+.top-header-right-social-icons{
+  display: flex;
+  justify-content: center;
 }
-
 .top-header-right-social-icons a {
+  color: #ffffff;
+  font-size: 12px;
   padding: 12px 6px;
 }
 /* ********Top_Header Css 
@@ -112,10 +123,6 @@ End******** */
 
 /* ********Navbar Css Start******** */
 
-.nav_div{
- margin-left: 70px;
- margin-right: 70px;
-}
 
 .logo{
   width: 150px;
@@ -288,6 +295,9 @@ End******** */
 
 .carousel_content p{
  margin-top: 20px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
 }
 /* ************Carousel Css End*********** */
 
@@ -366,13 +376,15 @@ End******** */
 }
 
 .shipping_banner_content {
-  padding: 58px 0px;
+  padding: 58px 40px;
   vertical-align: middle;
+  align-items: center;
 }
 
 .shipping_banner_heading {
   color: #ffffff;
   font-size: 34px;
+ 
 }
 
 .shipping_banner_link_div {
@@ -382,10 +394,13 @@ End******** */
 .shipping_banner_link {
   font-size: 12px;
   border: 1px solid #ffffff80;
-  width: 40%;
+  width: auto;
   text-transform: uppercase;
   text-align: center;
-  line-height: 49px;
+  line-height: 40px;
+}
+.shipping_banner_link_div a{
+  padding: 4px 40px;
 }
 
 .shipping_banner_link:hover {
@@ -437,7 +452,10 @@ End******** */
   width: 100%;
   height: 50vh;
 }
+.card_category{
+  min-height: 40px;
 
+}
 .card_category a {
   padding: 1px;
   color: #888787;
@@ -458,8 +476,6 @@ End*********** */
 .text_cmpnt_top_div{
   padding-top: 58px;
   padding-bottom: 57px;
-  /* padding-top: 107px;
-  padding-bottom: 47px; */
   background-color: #f5f5f5;
 }
 
@@ -470,8 +486,9 @@ End*********** */
   width: 100%;
 }
 
+
 .text_cmpnt_content p{
-  margin: 18px 0;
+  margin: 15px 0;
 }
 
 .text_cmpnt_content a{
@@ -569,6 +586,7 @@ display: flex;
 }
 
 .ftr_email{
+  width: 100%;
   font-size: 13px;
   line-height: 40px;
   height: 40px;
@@ -601,7 +619,10 @@ display: flex;
   width: 100%;
   height: auto;
 }
-
+.ftr_subscribe{
+  width: 50%;
+  font-size: 13px;
+}
 /* ************Footer Css End*********** */
 
 

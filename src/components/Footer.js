@@ -5,7 +5,7 @@ import { ImFacebook2, ImVimeo2, ImInstagram, ImLinkedin } from "react-icons/im";
 import shoe from "../assets/images/ftr-shoe.jpg";
 import insta from "../assets/images/ftr-insta.jpg";
 import shadow from "../assets/images/ftr-shadow.jpg";
-import holi from "../assets/images/ftr-holi.jpg";
+// import holi from "../assets/images/ftr-holi.jpg";
 import scenery from "../assets/images/ftr-scenery.jpg";
 import { TfiAngleRight } from "react-icons/tfi";
 import debit from "../assets/images/footer-debit-cards.png";
@@ -17,7 +17,7 @@ function Footer() {
         <div className="footer_bg">
           <Container fluid>
             <Row>
-              <Col>
+              <Col md={6} lg={3}>
                 <div>
                   <Navbar.Brand href="#home">
                     <img
@@ -35,7 +35,7 @@ function Footer() {
                     <p className="footer_address">
                       198 West 21th Street, Suite 721, New York NY 10010
                       <br />
-                      Email:suprema@qodeinteractive.com
+                      Email: suprema@qodeint.com
                       <br />
                       Phone: +88 (0) 101 0000 000
                       <br />
@@ -58,7 +58,7 @@ function Footer() {
                   </div>
                 </div>
               </Col>
-              <Col>
+              <Col md={6} lg={3}>
                 <div className="">
                   <h5 className="footer_heading">Latest Post</h5>
 
@@ -85,7 +85,7 @@ function Footer() {
                   </div>
                 </div>
               </Col>
-              <Col>
+              <Col md={6} lg={3}>
                 <div className="">
                   <h5 className="footer_heading">Tweeter Feed</h5>
 
@@ -94,7 +94,7 @@ function Footer() {
                   </div>
                 </div>
               </Col>
-              <Col sm={3}>
+              <Col xs={6} lg={3}>
                 <div className="">
                   <h5 className="footer_heading">Instagram Feed</h5>
                   <div className="footer_content">
@@ -112,11 +112,6 @@ function Footer() {
                       <li>
                         <a href="#shadow">
                           <img src={shadow} alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#holi">
-                          <img src={holi} alt="" />
                         </a>
                       </li>
                       <li>

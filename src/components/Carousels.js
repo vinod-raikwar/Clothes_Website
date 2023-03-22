@@ -4,6 +4,7 @@ import sports from "../assets/images/sports.avif";
 import sneaker from "../assets/images/sneaker.avif";
 import asseceory from "../assets/images/asseceory.avif";
 import "../assets/css/Style.css";
+import "../assets/css/Responsive.css";
 
 function Carousels() {
   return (
@@ -34,7 +35,7 @@ function Carousels() {
                           elit. Nesciunt iure dolore dicta voluptatibus itaque
                           quasi eius cum quisquam error necessitatibus.
                         </p>
-                        <div className="shipping_banner_link_div mt-5">
+                        <div className="shipping_banner_link_div">
                           <Nav.Link
                             className="shipping_banner_link"
                             href="#action1"
@@ -70,7 +71,7 @@ function Carousels() {
                           elit. Nesciunt iure dolore dicta voluptatibus itaque
                           quasi eius cum quisquam error necessitatibus.
                         </p>
-                        <div className="shipping_banner_link_div mt-5">
+                        <div className="shipping_banner_link_div">
                           <Nav.Link
                             className="shipping_banner_link"
                             href="#action1"
@@ -106,7 +107,7 @@ function Carousels() {
                           elit. Nesciunt iure dolore dicta voluptatibus itaque
                           quasi eius cum quisquam error necessitatibus.
                         </p>
-                        <div className="shipping_banner_link_div mt-5">
+                        <div className="shipping_banner_link_div">
                           <Nav.Link
                             className="shipping_banner_link"
                             href="#action1"

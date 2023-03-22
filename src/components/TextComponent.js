@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import "../assets/css/Style.css";
+import "../assets/css/Responsive.css";
 function TextComponent() {
   return (
     <>
@@ -8,7 +9,7 @@ function TextComponent() {
         <div className="text_cmpnt_top_div">
           <Container>
             <Row>
-              <Col>
+              <Col md={4}>
                 <div className="text_cmpnt_content">
                   <h5>Captivating and Creative</h5>
                   <p>
@@ -19,7 +20,7 @@ function TextComponent() {
                   <Nav.Link href="#">Find Out More</Nav.Link>
                 </div>
               </Col>
-              <Col>
+              <Col md={4}>
                 <div className="text_cmpnt_content">
                   <h5>Designed With Care</h5>
                   <p>
@@ -30,7 +31,7 @@ function TextComponent() {
                   <Nav.Link href="#">Find Out More</Nav.Link>
                 </div>
               </Col>
-              <Col>
+              <Col md={4}>
                 <div className="text_cmpnt_content">
                   <h5>Stunning On All Screens</h5>
                   <p>
