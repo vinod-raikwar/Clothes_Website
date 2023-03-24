@@ -8,7 +8,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import "../assets/css/Style.css";
+import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 
 function Top_header() {

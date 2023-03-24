@@ -3,24 +3,24 @@ import { Carousel, Row, Col, Container, Nav } from "react-bootstrap";
 import sports from "../assets/images/sports.avif";
 import sneaker from "../assets/images/sneaker.avif";
 import asseceory from "../assets/images/asseceory.avif";
-import "../assets/css/Style.css";
+import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 
 function Carousels() {
   return (
     <>
       <section className="carousel_top_div">
-        <div>
-          <Container>
-            <Row>
-              <Col>
+        <Container>
+          <Row>
+            <Col>
+              <div>
                 <h6>Category</h6>
 
-                <h3>Browse Through Our Best Selleres</h3>
-              </Col>
-            </Row>
-          </Container>
-        </div>
+                <h3>Browse Through Our Best Category</h3>
+              </div>
+            </Col>
+          </Row>
+        </Container>
         <div className="carousel_div">
           <Carousel>
             <Carousel.Item interval={1000}>

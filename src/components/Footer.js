@@ -1,14 +1,20 @@
 import React from "react";
 import { Container, Row, Col, Navbar, Nav, Form } from "react-bootstrap";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/images/logo-footer.png";
 import { ImFacebook2, ImVimeo2, ImInstagram, ImLinkedin } from "react-icons/im";
+import { AiFillCopyrightCircle } from "react-icons/ai";
 import shoe from "../assets/images/ftr-shoe.jpg";
 import insta from "../assets/images/ftr-insta.jpg";
 import shadow from "../assets/images/ftr-shadow.jpg";
-// import holi from "../assets/images/ftr-holi.jpg";
 import scenery from "../assets/images/ftr-scenery.jpg";
 import { TfiAngleRight } from "react-icons/tfi";
 import debit from "../assets/images/footer-debit-cards.png";
+import "../pages/home/Home.css";
+import "../assets/css/Responsive.css";
+// import Services from "../pages/Services";
+// import Product from "../pages/Product";
+// import Contact from "../pages/Contact";
 
 function Footer() {
   return (
@@ -17,9 +23,9 @@ function Footer() {
         <div className="footer_bg">
           <Container fluid>
             <Row>
-              <Col md={6} lg={3}>
+              <Col xm={12} md={6} lg={3}>
                 <div>
-                  <Navbar.Brand href="#home">
+                  <Navbar.Brand to="#home">
                     <img
                       src={logo}
                       className="d-inline-block align-top logo_size"
@@ -42,23 +48,23 @@ function Footer() {
                       Fax:+88 (0) 202 0000 001
                     </p>
                     <Nav className="footer_social_icons">
-                      <Nav.Link href="#">
+                      <NavLink to="#">
                         <ImFacebook2 />
-                      </Nav.Link>
-                      <Nav.Link href="#">
+                      </NavLink>
+                      <NavLink to="#">
                         <ImLinkedin />
-                      </Nav.Link>
-                      <Nav.Link href="#">
+                      </NavLink>
+                      <NavLink to="#">
                         <ImVimeo2 />
-                      </Nav.Link>
-                      <Nav.Link href="#">
+                      </NavLink>
+                      <NavLink to="#">
                         <ImInstagram />
-                      </Nav.Link>
+                      </NavLink>
                     </Nav>
                   </div>
                 </div>
               </Col>
-              <Col md={6} lg={3}>
+              <Col xm={12} md={6} lg={3}>
                 <div className="">
                   <h5 className="footer_heading">Latest Post</h5>
 
@@ -85,39 +91,54 @@ function Footer() {
                   </div>
                 </div>
               </Col>
-              <Col md={6} lg={3}>
+              <Col xm={12} md={6} lg={3}>
                 <div className="">
-                  <h5 className="footer_heading">Tweeter Feed</h5>
+                  <h5 className="footer_heading">Pages</h5>
 
-                  <div className="footer_content">
-                    <p>Couldn't connect with Twitter</p>
+                  <div className="footer_content footer_page_link">
+                    <Row>
+                      <Col xs={6}>
+                        <div>
+                          <NavLink to="/">Home</NavLink>
+                          <NavLink to="about">About</NavLink>
+                          <NavLink to="services">Services</NavLink>
+                        </div>
+                      </Col>
+                      <Col xs={6}>
+                        <div>
+                          <NavLink to="product">Product</NavLink>
+                          <NavLink to="contact">Contact</NavLink>
+                          <NavLink to="login">Login</NavLink>
+                        </div>
+                      </Col>
+                    </Row>
                   </div>
                 </div>
               </Col>
-              <Col xs={6} lg={3}>
+              <Col xm={12} md={6} lg={3}>
                 <div className="">
                   <h5 className="footer_heading">Instagram Feed</h5>
                   <div className="footer_content">
                     <ul>
                       <li>
-                        <a href="#shoe">
+                        <Link to="#shoe">
                           <img src={shoe} alt="" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#insta">
+                        <Link to="#insta">
                           <img src={insta} alt="" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#shadow">
+                        <Link to="#shadow">
                           <img src={shadow} alt="" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#scenery">
+                        <Link to="#scenery">
                           <img src={scenery} alt="" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                     <hr />
@@ -130,18 +151,39 @@ function Footer() {
                           </label>
                         </div>
                         <div className="ftr_email_div">
-                          <input className="ftr_email" type="email" placeholder="E-mail" />
+                          <input
+                            className="ftr_email"
+                            type="email"
+                            placeholder="E-mail"
+                          />
                           <span className="ftr_email_arrow_btn">
                             <TfiAngleRight />
                           </span>
                         </div>
                       </div>
                     </Form>
-                    <hr />
-                    <div className="ftr_debit_cards">
-                        <img src={debit} alt="debit-cards" />            
-                    </div>
                   </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="footer_bottom">
+          <Container fluid>
+            <Row>
+              <Col sm={6}>
+                <div className="footer_bottom_left">
+                  <p>
+                    <span>
+                      <AiFillCopyrightCircle />
+                     </span>
+                     2023 Suprema India,Inc.All rights reserved.
+                  </p>
+                </div>
+              </Col>
+              <Col sm={6}>
+                <div className="ftr_debit_cards">
+                  <img src={debit}  className="img-fluid" alt="debit-cards" />
                 </div>
               </Col>
             </Row>

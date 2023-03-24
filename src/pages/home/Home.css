@@ -1,8 +1,9 @@
 /* ********Common Css Start******** */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 @font-face {
   font-family: "Poppins";
-  src: local("Poppins"), url(../font/Poppins-Regular.ttf) format("truetype");
+  src: local("Poppins"), url(../../assets/font/Poppins-Regular.ttf) format("truetype");
 }
 
 h6 {
@@ -21,10 +22,8 @@ h3 {
   line-height: 1.4em;
   font-weight: 600;
   letter-spacing: -0.5px;
-  font-family: Poppins, 
-  sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: center;
- 
 }
 
 h4 {
@@ -47,11 +46,11 @@ h1 {
   font-weight: 600;
   letter-spacing: -1px;
   text-transform: Capitalize;
-  text-align: center;
+  /* text-align: center; */
 }
 
-.nav_brand{
-margin: 0;
+.nav_brand {
+  margin: 0;
 }
 
 .inner_div {
@@ -74,7 +73,7 @@ p {
   background-color: #000000;
 }
 
-.top-header-left{
+.top-header-left {
   display: flex;
 }
 
@@ -92,7 +91,7 @@ p {
 }
 
 .top-header-left a:hover {
-  color: #0cc3ce;;
+  color: #0cc3ce;
 }
 
 .vrtcl_line {
@@ -109,7 +108,7 @@ p {
   margin-top: 3px;
 }
 
-.top-header-right-social-icons{
+.top-header-right-social-icons {
   display: flex;
   justify-content: center;
 }
@@ -123,27 +122,26 @@ End******** */
 
 /* ********Navbar Css Start******** */
 
-
-.logo{
+.logo {
   width: 150px;
   height: 75px;
 }
 
-.nav_anchor a{
- font-size: 16px;
- font-weight: 500;
- color: #252525;
- margin: 0px 12px;
- text-decoration: none;
- position: relative;
+.nav_anchor a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #252525;
+  margin: 0px 12px;
+  text-decoration: none;
+  position: relative;
 }
 
-.nav_anchor a:hover{
+.nav_anchor a:hover {
   color: #000000;
 }
 
-.nav_anchor a::after{
-  content: '';
+.nav_anchor a::after {
+  content: "";
   position: absolute;
   background-color: #0cc3ce;
   height: 3px;
@@ -152,29 +150,27 @@ End******** */
   bottom: -10px;
   transition: 0.3s;
 }
-.nav_anchor a:hover::after{
+.nav_anchor a:hover::after {
   color: #0cc3ce;
   width: 100%;
 }
 
-
-.nav_icons span{
+.nav_icons span {
   font-size: 21px;
   color: #252525;
   padding-right: 12px;
 }
 
-.nav_icons span:hover{
+.nav_icons span:hover {
   color: #0cc3ce;
 }
 
-
-.humburgur_menu{
+.humburgur_menu {
   font-size: 23px;
   color: #252525;
 }
 
-.humburgur_menu:hover{
+.humburgur_menu:hover {
   color: #0cc3ce;
 }
 
@@ -183,7 +179,7 @@ End******** */
 /* ***********Banner Css Start******** */
 
 .bg_img {
-  background-image: url(../images/home-parallax.jpg);
+  background-image: url(../../assets/images/home-parallax.jpg);
   /* background-attachment: fixed; */
   height: 100vh;
   width: 100%;
@@ -195,7 +191,7 @@ End******** */
   text-align: center;
 }
 
-.banner_div{
+.banner_div {
   justify-content: center;
 }
 
@@ -204,7 +200,6 @@ End******** */
   font-weight: 900;
   text-transform: uppercase;
 }
-
 
 .bg_img_content p {
   font-family: Poppins, sans-serif;
@@ -250,40 +245,48 @@ End******** */
 /* **************Banner Css End***********/
 
 /* ************Carousel Css Start*********** */
-.carousel_top_div{
+
+.carousel_top_div {
   padding-top: 57px;
   padding-bottom: 30px;
 }
-.carousel_div{
+.carousel_div {
   margin-top: 30px;
+  padding: 0px 30px;
 }
 
-.carousel_content_img{
-  background-image: url(../images/background.avif);
+.carousel_content_img {
+  background-image: url(../../assets/images/background.avif);
   width: 100%;
   height: 60vh;
   background-size: cover;
   background-position: center;
-  text-align: center; 
+  text-align: center;
   flex-direction: column;
   display: flex;
   justify-content: center;
-
 }
-.carousel_content{
+.carousel-control-prev {
+  justify-content: start;
+}
+.carousel-control-next {
+  justify-content: end;
+}
+
+.carousel_content {
   color: #ffffff;
   padding: 10px 50px 10px 50px;
   text-align: start;
 }
 
-.carousel_img{
+.carousel_img {
   width: 100%;
   height: 60vh;
   background-size: cover;
   background-position: center;
 }
 
-.carousel_content h1{
+.carousel_content h1 {
   font-family: Poppins, sans-serif;
   color: #ffffff;
   line-height: 60px;
@@ -293,25 +296,23 @@ End******** */
   text-align: start;
 }
 
-.carousel_content p{
- margin-top: 20px;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
+.carousel_content p {
+  margin-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /* ************Carousel Css End*********** */
-
 
 /* ************StorieCard Css Start*********** */
 .storie_cards_top_div {
   background-color: #f4f4f4;
   padding-top: 57px;
   padding-bottom: 30px;
-
 }
 
-.inner_div{
-  margin-top: 30px;
+.storie_card_title {
+  min-height: 48px;
 }
 .banner_card {
   width: 25rem;
@@ -324,19 +325,19 @@ End******** */
   color: #101010;
 }
 .card_link::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 1px;
   background: #000;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 .card_link:hover::after {
   width: 33%;
 }
 
-.card_link:hover{
+.card_link:hover {
   color: #0cc3ce;
 }
 
@@ -353,7 +354,6 @@ End******** */
   font-weight: 500;
 }
 
-
 .card_span {
   font-size: 10px;
   padding: 0 6px;
@@ -363,13 +363,13 @@ End******** */
 
 /* ************ShippingBar Css Start*********** */
 
-.shipping_top_div{
+.shipping_top_div {
   padding-top: 57px;
   padding-bottom: 58px;
 }
 
 .shipping_banner_img {
-  background-image: url(../images/banner.jpg) !important;
+  background-image: url(../../assets/images/banner.jpg) !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -384,7 +384,6 @@ End******** */
 .shipping_banner_heading {
   color: #ffffff;
   font-size: 34px;
- 
 }
 
 .shipping_banner_link_div {
@@ -399,7 +398,7 @@ End******** */
   text-align: center;
   line-height: 40px;
 }
-.shipping_banner_link_div a{
+.shipping_banner_link_div a {
   padding: 4px 40px;
 }
 
@@ -410,8 +409,11 @@ End******** */
 
 /* ************Trending Css Start*********** */
 .trending_top_div {
-  /* padding-top: 65px; */
   padding-bottom: 45px;
+}
+
+.media-object {
+  width: 60px;
 }
 
 .head_content h4:after {
@@ -436,13 +438,11 @@ End******** */
 
 /* ************SellerCard Css Start*********** */
 
-.seller_top_div{
+.seller_top_div {
   padding-top: 57px;
-  /* padding-bottom: 30px; */
 }
-
-.seller_cards{
-  padding-top: 30px;
+.seller_cards {
+  margin-top: 30px;
 }
 
 .card_size {
@@ -450,54 +450,54 @@ End******** */
 }
 .card_img {
   width: 100%;
-  height: 50vh;
 }
-.card_category{
+.card_category {
   min-height: 40px;
-
 }
 .card_category a {
+  text-decoration: none;
   padding: 1px;
   color: #888787;
   font-size: 12px;
   font-family: Poppins, sans-serif;
 }
-.card_category a:hover{
+.card_category a:hover {
   color: #0cc3ce;
 }
-
+.card-img-top {
+  object-fit: cover;
+  height: 280px;
+}
 
 /* ************SellerCard Css 
 End*********** */
 
-
 /* ************TextComponent Css Start*********** */
 
-.text_cmpnt_top_div{
+.text_cmpnt_top_div {
   padding-top: 58px;
   padding-bottom: 57px;
   background-color: #f5f5f5;
 }
 
-.text_cmpnt_content{
+.text_cmpnt_content {
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
 }
 
-
-.text_cmpnt_content p{
+.text_cmpnt_content p {
   margin: 15px 0;
 }
 
-.text_cmpnt_content a{
-  font-family: Poppins,sans-serif;
- font-size: 12px;
- line-height: 1.2em;
- font-weight: 600;
- text-transform: uppercase;
- color: #0cc3ce;
+.text_cmpnt_content a {
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0cc3ce;
 }
 
 /* ************TextComponent Css End*********** */
@@ -515,25 +515,25 @@ End*********** */
   padding: 70px 80px 30px 80px;
 }
 
-.footer_content{
+.footer_content {
   margin-top: 30px;
 }
 
-.footer_address{
+.footer_address {
   line-height: 28px;
 }
 
-.logo_size{
+.logo_size {
   width: 60%;
 }
 
-.footer_social_icons a{
+.footer_social_icons a {
   padding: 0px 15px 0px 0px;
   font-size: 30px;
   color: #ffffff;
 }
 
-.footer_social_icons a:hover{
+.footer_social_icons a:hover {
   color: #0cc3ce;
 }
 
@@ -544,48 +544,43 @@ End*********** */
   font-weight: 500;
 }
 
-.footer_heading{
+.footer_heading {
   font-size: 18px;
 }
 
-.footer_para_link{
- margin: 0px 0px 6px 0px;
- font-size: 15px;
+.footer_para_link {
+  margin: 0px 0px 6px 0px;
+  font-size: 15px;
 }
 
-.footer_content ul{
+.footer_content ul {
   display: flex;
   padding: 0;
-  
 }
-.footer_content ul li{
+.footer_content ul li {
   list-style: none;
   margin: 0px 8px 0px 0px;
 }
-.footer_content ul li a img{
- width: 60px;
+.footer_content ul li a img {
+  width: 60px;
 }
 
-.ftr_email_div{
-display: flex;
-}
-
-.ftr_email input{
+.ftr_email input {
   background-color: transparent;
   height: 41px;
 }
 
-::placeholder{
+::placeholder {
   color: #fff;
   font-size: 13px;
   padding-left: 15px;
 }
 
-.ftr_email_div{
+.ftr_email_div {
   position: relative;
 }
 
-.ftr_email{
+.ftr_email {
   width: 100%;
   font-size: 13px;
   line-height: 40px;
@@ -594,48 +589,58 @@ display: flex;
   background-color: transparent;
 }
 
-.ftr_email_arrow_btn{
-    font-size: 13px;
-    color: #dedede;
-    padding: 0px 0px 0px 10px;
-    height: 40px;
-    line-height: 40px;
-    width: 40px;
-    vertical-align: top;
-    background-color: transparent;
-    border-left: 1px solid #fff;
-    position: absolute;
-    right: 0;
-    top: 0;
+.ftr_email_arrow_btn {
+  font-size: 13px;
+  color: #dedede;
+  padding: 0px 0px 0px 10px;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  vertical-align: top;
+  background-color: transparent;
+  border-left: 1px solid #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.ftr_email_arrow_btn:hover{
+.ftr_email_arrow_btn:hover {
   background-color: #0cc3ce;
   color: #ffffff;
   border: 1px solid #fff;
 }
 
-.ftr_debit_cards img{
-  width: 100%;
-  height: auto;
-}
-.ftr_subscribe{
-  width: 50%;
+.ftr_subscribe {
   font-size: 13px;
-}
-/* ************Footer Css End*********** */
-
-
-
-.product_slider img{
-  padding: 10px;
-  height: 360px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  flex-direction: column;
+  padding-bottom: 20px;
 }
 
-.product_slider_heading{
+.footer_page_link a {
+  display: flex;
+  text-decoration: none;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 0px 0px 16px 0px;
+}
+
+.footer_page_link a:hover {
+  color: #0cc3ce;
+}
+
+.footer_bottom {
+  margin: 0px auto;
+  background-color: #191919;
+  border-top: 1px solid #c0c0c0;
+}
+
+.footer_bottom_left {
+  color: #ffffff;
   text-align: center;
+  padding-top: 14px;
 }
+
+.ftr_debit_cards img {
+  padding: 8px 0px;
+}
+
+/* ************Footer Css End*********** */

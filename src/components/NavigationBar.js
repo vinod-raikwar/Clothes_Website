@@ -4,7 +4,7 @@ import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { VscSearch } from "react-icons/vsc";
 import { BsHandbag } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
-import "../assets/css/Style.css";
+import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 import { NavLink } from "react-router-dom";
 
@@ -16,8 +16,8 @@ function NavigationBar({ name, ...props }) {
 
   return (
     <>
-      <section bg="light">
-        <Navbar expand="lg">
+      <section>
+        <Navbar expand="lg" className="light">
           <Container>
             <Navbar.Brand to="/">
               <h2 className="nav_brand">Suprema</h2>

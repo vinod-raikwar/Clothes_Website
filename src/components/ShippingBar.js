@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
-import "../assets/css/Style.css";
+import "../pages/home/Home.css";
 import "../assets/css/Responsive.css";
 
 function ShippingBar() {
